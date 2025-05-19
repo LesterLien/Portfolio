@@ -47,7 +47,7 @@ const App = ({ children }: AppProps) => {
   }, []);
 
   let cursorClass = "cursor-default";
-  if (clickType === "left") cursorClass = "cursor-click";
+  if (clickType === "left") cursorClass = "cursor-click-left";
   else if (clickType === "right") cursorClass = "cursor-click-right";
   else if (isHoveringLink) cursorClass = "cursor-hover";
 
