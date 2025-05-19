@@ -2,4 +2,6 @@
 
 body {
   @apply bg-[#191924];
+  font: "Space Grotesk, sans-serif";
 }
+
