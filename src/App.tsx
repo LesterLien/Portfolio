@@ -55,7 +55,6 @@ const App = ({ children }: AppProps) => {
     <div
       className={cursorClass}
       style={{ height: "100vh", width: "100vw" }}
-      onContextMenu={(e) => e.preventDefault()}
     >
       {children}
     </div>
