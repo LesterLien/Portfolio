@@ -3,10 +3,8 @@ import Navbar from "../components/Navbar";
 function Home() {
 
   return (
-    <div className="h-full">
-        <div>
+    <div className="min-h-screen">
           <Navbar/>
-        </div>
         <div className="flex flex-col justify-center items-center m-3">
           <div className="font-bold text-white text-4xl m-3">
             About Me
@@ -19,8 +17,19 @@ function Home() {
           <div className="font-bold text-white text-4xl m-3">
             Skills
           </div>
-          <div className="font-bold text-white text-4xl m-3">
-            Projects
+          <div className="font-bold text-white text-4xl m-3 flex flex-col justify-center items-center">
+            <a>Projects</a>
+            <div className="flex flex-row justify-center items-center m-3">
+                <div className="m-3">
+                  Project 1
+                </div>
+                <div className="m-3">
+                  Project 2
+                </div>
+                <div className="m-3">
+                  Project 3
+                </div>
+            </div>
           </div>
         </div>
     </div>
