@@ -1,5 +1,28 @@
 @import "tailwindcss";
 
-body {
-  @apply bg-[#191924];
+body, html {
+  @apply bg-[#1C1C27];
+  font-family: 'Space Grotesk', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  cursor: auto;
+  scroll-behavior: smooth;
 }
+
+.cursor-default, .cursor-default * {
+  cursor: url("/assets/cursor/point.cur"), auto !important;
+}
+
+.cursor-hover, .cursor-hover * {
+  cursor: url("/assets/cursor/hover.cur"), auto !important;
+}
+
+.cursor-click-left, .cursor-click-left * {
+  cursor: url("/assets/cursor/click_left.cur"), auto !important;
+}
+
+.cursor-click-right, .cursor-click-right * {
+  cursor: url("/assets/cursor/click_right.cur"), auto !important;
+}
+
