@@ -7,7 +7,7 @@ function Home() {
           <Navbar/>
         <div className="flex flex-col justify-center items-center m-3">
           <div className="font-bold text-white text-4xl m-3">
-            About Me
+            <h1>About Me</h1>
           </div>
           <img 
             src="/assets/images/UCR.JPG" 
@@ -15,21 +15,22 @@ function Home() {
             className="w-auto h-100 rounded-xl outline-1 outline-white"
           />
           <div className="font-bold text-white text-4xl m-3">
-            Skills
+            <h1>Skills</h1>
           </div>
           <div className="font-bold text-white text-4xl m-3 flex flex-col justify-center items-center">
-            <a>Projects</a>
-            <div className="flex flex-row justify-center items-center m-3">
-                <div className="m-3">
+            <h1>Projects</h1>
+            <div className="flex flex-row justify-center items-center m-3 ">
+                <div className="m-3 w-85 h-120 bg-[#181823] outline-1 outline-[#181823] rounded-lg shadow-lg shadow-black px-5 py-6 flex flex-col gap-3 transition-all duration-500 ease-in-out hover:-translate-y-2">
                   Project 1
                 </div>
-                <div className="m-3">
+                 <div className="m-3 w-85 h-120 bg-[#181823] outline-1 outline-[#181823] rounded-lg shadow-lg shadow-black px-5 py-6 flex flex-col gap-3 transition-all duration-500 ease-in-out hover:-translate-y-2">
                   Project 2
                 </div>
-                <div className="m-3">
+                 <div className="m-3 w-85 h-120 bg-[#181823] outline-1 outline-[#181823] rounded-lg shadow-lg shadow-black px-5 py-6 flex flex-col gap-3 transition-all duration-500 ease-in-out hover:-translate-y-2">
                   Project 3
                 </div>
             </div>
+            <a>See More</a>
           </div>
         </div>
     </div>
