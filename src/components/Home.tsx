@@ -1,5 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { skills } from "../data/skills";
+
 function Home() {
 
   return (
@@ -28,13 +30,34 @@ function Home() {
             className="w-full max-w-md sm:max-w-lg md:max-w-xl rounded-xl outline-1 outline-white"
           />
           
-          <div className="font-bold text-white text-4xl m-3" id="skills">
-            <h1>
-              Skills
-            </h1>
-            <div className="flex flex-row justify-center items-center m-3">
+          <div className="text-white text-4xl m-3 flex flex-col justify-center items-center" id="skills">
+            <h1 className="font-bold">Skills</h1>
+            <div className="flex flex-wrap justify-center items-start m-3">
+              {skills.map((skillCategory, index) => (
+                <div
+                  key={index}
+                  className="m-3 w-80 bg-[#181823] outline-1 outline-[#181823] rounded-lg shadow-lg shadow-black px-5 py-6 flex flex-col gap-3 transition-all duration-500 ease-in-out  hover:-translate-y-2"
+                >
+                  <h2 className="text-xl font-semibold mb-3 flex justify-center items-center">{skillCategory.title}</h2>
+                  <div className="flex flex-wrap justify-center items-center gap-3">
+                    {skillCategory.skills.map((item, index) => {
+                      const Icon = item.image;
+                      return (
+                        <div key={index} className="flex flex-row items-center w-auto border-1 rounded-lg p-3">
+                          <Icon className="w-[24px] h-[24px] mr-2" />
+
+                          <span className="text-[16px]">
+                            {item.name}
+                            </span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
+
 
 
           <div className="font-bold text-white text-4xl m-3 flex flex-col justify-center items-center" id="projects">
