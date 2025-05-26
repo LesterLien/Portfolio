@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { skills } from "../data/skills";
+import { projects } from "../data/projects";
 
 function Home() {
 
@@ -64,15 +65,20 @@ function Home() {
               Projects
             </h1>
             <div className="flex flex-wrap justify-center items-center m-3">
-                <div className="m-3 w-85 h-120 bg-[#181823] outline-1 outline-[#181823] rounded-lg shadow-lg shadow-black px-5 py-6 flex flex-col gap-3 transition-all duration-500 ease-in-out  hover:-translate-y-2">
-                  Project 1
+              {projects.map((projects, index) => (
+                <div
+                  key={index}
+                  className="m-3 w-95 h-120 bg-[#181823] outline-1 outline-[#181823] rounded-lg shadow-lg shadow-black px-5 py-6 flex flex-col gap-3 transition-all duration-500 ease-in-out  hover:-translate-y-2"
+                >
+                  <div className="flex flex-col justify-center text-[#C3C4C5]">
+                    <div className="mb-3">
+                      <img src={projects.image} className="rounded-lg"/>
+                    </div>
+                    <h2 className="text-[24px] mb-2">{projects.title}</h2>
+                    <h3 className="text-[14px] pl-1 text-[#55555B] font-normal">{projects.date}</h3>
+                  </div>
                 </div>
-                 <div className="m-3 w-85 h-120 bg-[#181823] outline-1 outline-[#181823] rounded-lg shadow-lg shadow-black px-5 py-6 flex flex-col gap-3 transition-all duration-500 ease-in-out hover:-translate-y-2">
-                  Project 2
-                </div>
-                 <div className="m-3 w-85 h-120 bg-[#181823] outline-1 outline-[#181823] rounded-lg shadow-lg shadow-black px-5 py-6 flex flex-col gap-3 transition-all duration-500 ease-in-out hover:-translate-y-2">
-                  Project 3
-                </div>
+              ))}
             </div>
             <a>See More</a>
           </div>
