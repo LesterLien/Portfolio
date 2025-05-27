@@ -4,7 +4,7 @@ import EmailIcon from '@mui/icons-material/Email';
 
 export default function Footer() {
   return (
-    <div className="h-60 bg-[#191923] flex flex-col justify-center items-center outline-1 outline-white text-[20px] text-white">
+    <div className="h-60 bg-[#191923] flex flex-col justify-center items-center outline-1 outline-white text-[20px] text-white w-full mt-auto" id="contact">
         <div>
             <h1>Lester Lien</h1>
         </div>

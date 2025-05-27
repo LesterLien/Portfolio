@@ -1,5 +1,3 @@
-import MainNavbar from "./MainNavbar";
-import Footer from "../components/Footer";
 import { skills } from "../data/skills";
 import { projects } from "../data/projects";
 import SideNavbar from "./SideNavbar";
@@ -8,7 +6,6 @@ function Home() {
 
   return (
     <div className="min-h-screen">
-    <MainNavbar/>
     <SideNavbar/>
         <div className="flex flex-col justify-center items-center m-3">
           <div className="text-white text-4xl m-3 flex flex-wrap flex-col justify-center items-center" id="about">
@@ -84,10 +81,6 @@ function Home() {
             </div>
             <a>See More</a>
           </div>
-
-        </div>
-        <div id="contact">
-          <Footer/>
         </div>
     </div>
   );
