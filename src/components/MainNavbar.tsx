@@ -12,7 +12,7 @@ export default function Navbar() {
       </div>
       <div className="flex justify-center space-x-8 text-white text-[20px] m-4">
         <Link to="/projects" className="hover:text-[#854CE6] transition-colors duration-200">Projects</Link>
-        <Link to="/certifications" className="hover:text-[#854CE6] transition-colors duration-200">Certifications</Link>
+        <Link to="/credentials" className="hover:text-[#854CE6] transition-colors duration-200">Credentials</Link>
         <a href="#contact" className="hover:text-[#854CE6] transition-colors duration-200">Contact</a>
       </div>
     </div>
