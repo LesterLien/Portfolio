@@ -1,13 +1,13 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import { skills } from "../data/skills";
 import { projects } from "../data/projects";
+import SideNavbar from "./SideNavbar";
+import { Link } from "react-router-dom";
 
 function Home() {
 
   return (
     <div className="min-h-screen">
-        <Navbar/>
+    <SideNavbar/>
         <div className="flex flex-col justify-center items-center m-3">
           <div className="text-white text-4xl m-3 flex flex-wrap flex-col justify-center items-center" id="about">
             <h1 className="font-bold">
@@ -80,12 +80,9 @@ function Home() {
                 </div>
               ))}
             </div>
-            <a>See More</a>
+            <Link to="/projects" className="hover:text-[#854CE6] transition-colors duration-200">See More</Link>
           </div>
-
         </div>
-        
-        <Footer/>
     </div>
   );
 }

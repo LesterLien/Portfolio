@@ -53,8 +53,8 @@ const App = ({ children }: AppProps) => {
 
   return (
     <div
-      className={cursorClass}
-      style={{ height: "100vh", width: "100vw" }}
+      className={`${cursorClass} min-h-screen flex flex-col`}
+    style={{ width: "100vw" }}
     >
       {children}
     </div>
