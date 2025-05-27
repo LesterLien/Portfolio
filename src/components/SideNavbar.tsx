@@ -4,7 +4,7 @@ import { FaRegLightbulb, FaLaptopCode } from "react-icons/fa";
 
 export default function SideNavbar() {
   return (
-    <div className="group w-[60px] hover:w-[140px] transition-all duration-300 bg-[#191923] flex flex-col outline-1 outline-white rounded-xl sticky left-10 z-50 top-2/5 overflow-hidden">
+    <div className="group w-[60px] hover:w-[140px] transition-all duration-300 bg-[#191923] flex flex-col outline-1 outline-white rounded-xl fixed left-10 z-50 top-2/5 overflow-hidden">
 
       <div className="flex flex-col justify-start items-start text-white text-[16px] py-4 w-full px-3">
 
