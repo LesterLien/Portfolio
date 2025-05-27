@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+import MainNavbar from "./MainNavbar";
 import Footer from "../components/Footer";
 import { skills } from "../data/skills";
 import { projects } from "../data/projects";
@@ -7,7 +7,7 @@ function Home() {
 
   return (
     <div className="min-h-screen">
-        <Navbar/>
+        <MainNavbar/>
         <div className="flex flex-col justify-center items-center m-3">
           <div className="text-white text-4xl m-3 flex flex-wrap flex-col justify-center items-center" id="about">
             <h1 className="font-bold">
@@ -84,8 +84,9 @@ function Home() {
           </div>
 
         </div>
-        
-        <Footer/>
+        <div id="contact">
+          <Footer/>
+        </div>
     </div>
   );
 }
