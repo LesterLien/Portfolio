@@ -1,6 +1,7 @@
 import { skills } from "../data/skills";
 import { projects } from "../data/projects";
 import SideNavbar from "./SideNavbar";
+import { Link } from "react-router-dom";
 
 function Home() {
 
@@ -79,7 +80,7 @@ function Home() {
                 </div>
               ))}
             </div>
-            <a>See More</a>
+            <Link to="/projects" className="hover:text-[#854CE6] transition-colors duration-200">See More</Link>
           </div>
         </div>
     </div>
