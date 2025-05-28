@@ -1,7 +1,7 @@
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
-import { Bio } from "../data/bio";
+import { bio } from "../data/bio";
 
 export default function Footer() {
   return (
@@ -10,7 +10,7 @@ export default function Footer() {
             <h1>Lester Lien</h1>
         </div>
 
-        {Bio.map((contact, index) => (
+        {bio.map((contact, index) => (
             <div key={index} className="flex flex-row m-2">
                 <a href={contact.linkedin} className="ml-2 mr-2 cursor-hover hover:text-[#854CE6]" target="display">
                 <LinkedInIcon />

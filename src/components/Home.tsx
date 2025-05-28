@@ -2,6 +2,7 @@ import { skills } from "../data/skills";
 import { projects } from "../data/projects";
 import SideNavbar from "./SideNavbar";
 import { Link } from "react-router-dom";
+import { bio } from "../data/bio";
 
 function Home() {
 
@@ -13,25 +14,37 @@ function Home() {
             <h1 className="font-bold">
               About Me
             </h1>
-            <div className="text-white text-[16px] max-w-3xl text-center m-4">
-                <p>
-                  Hi, I am Lester Lien. 
-                  I recently graduated from the University of California, Riverside with a Bachelor of Science in Computer Science. 
-                  I aspire to be a software engineer and enjoy working on full-stack projects. 
-                  I have been learning more about IT support and how it operates.
-                  At the moment, I am seeking opportunities to improve my skills, work alongside a team, and contribute towards something intriguing. 
-                  Whenever I am coding web apps or providing technical support, I am constantly eager to learn and perform well.
-                </p>
+            <div className="flex flex-row w-4/5 m-3 gap-3">
+              <div className="text-white text-[16px] max-w-3xl m-4">
+                {bio.map((info) => (
+                  <div
+                    className="h-auto flex flex-col gap-3"
+                  >
+                    <p className="leading-relaxed">
+                      {info.description}
+                    </p>
+
+                    <a
+                      href={info.resume}
+                      target="display"
+                      className="text-amber-400 underline hover:text-amber-300 transition duration-200"
+                    >
+                      View Resume
+                    </a>
+
+                  </div>
+
+                ))}
+              </div>
+              <img 
+                src="/assets/images/UCR.JPG" 
+                alt="UCR" 
+                className="w-full max-w-md sm:max-w-lg md:max-w-xl rounded-xl outline-1 outline-white"
+              />
             </div>
           </div>
-
-          <img 
-            src="/assets/images/UCR.JPG" 
-            alt="UCR" 
-            className="w-full max-w-md sm:max-w-lg md:max-w-xl rounded-xl outline-1 outline-white"
-          />
           
-          <div className="text-4xl m-3 flex flex-col justify-center items-center" id="skills">
+          <div className="text-4xl m-3 flex flex-col justify-center items-center w-2/3" id="skills">
             <h1 className="font-bold text-white">Skills</h1>
             <div className="flex flex-wrap justify-center items-start m-3">
               {skills.map((skillCategory, index) => (
