@@ -14,33 +14,35 @@ function Home() {
             <h1 className="font-bold">
               About Me
             </h1>
-            <div className="flex flex-row w-4/5 m-3 gap-3">
-              <div className="text-white text-[16px] max-w-3xl m-4">
+            <div className="flex flex-col lg:flex-row w-4/5 m-3 gap-3">
+              <div className="flex-1 max-w-full md:max-w-xl text-white text-[16px] m-4">
                 {bio.map((info) => (
-                  <div
-                    className="h-auto flex flex-col gap-3"
-                  >
+                  <div className="h-auto flex flex-col gap-5">
                     <p className="leading-relaxed">
                       {info.description}
                     </p>
-
-                    <a
+                    
+                    <div className="flex justify-center items-center">
+                      <a
                       href={info.resume}
                       target="display"
-                      className="text-amber-400 underline hover:text-amber-300 transition duration-200"
-                    >
+                      className="w-30 h-10 bg-[#191923] shadow-md shadow-black outline-1 outline-white hover:text-[#854CE6] transition duration-200 flex justify-center items-center rounded-md hover:-translate-y-1 hover:transition-all hover:duration-300"
+                      >
                       View Resume
-                    </a>
+                      </a>
+                    </div>
 
                   </div>
 
                 ))}
               </div>
-              <img 
+              <div className="flex-1 max-w-full md:max-w-xl">
+                    <img 
                 src="/assets/images/UCR.JPG" 
                 alt="UCR" 
                 className="w-full max-w-md sm:max-w-lg md:max-w-xl rounded-xl outline-1 outline-white"
               />
+              </div>
             </div>
           </div>
           
@@ -77,7 +79,7 @@ function Home() {
             <h1>
               Projects
             </h1>
-            <div className="flex flex-wrap justify-center items-center m-3">
+            <div className="flex flex-wrap justify-center items-center m-3 cursor-hover">
               {projects.map((projects, index) => (
                 <div
                   key={index}
