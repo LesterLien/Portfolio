@@ -83,19 +83,26 @@ function Home() {
               {projects.map((projects, index) => (
                 <div
                   key={index}
-                  className="m-3 w-95 h-120 bg-[#181823] outline-1 outline-[#181823] rounded-lg shadow-lg shadow-black px-5 py-6 flex flex-col gap-3 transition-all duration-500 ease-in-out  hover:-translate-y-2"
+                  className="m-3 w-95 h-65 bg-[#181823] outline-1 outline-[#181823] rounded-lg shadow-lg shadow-black px-5 py-6 flex flex-col gap-3 transition-all duration-500 ease-in-out  hover:-translate-y-2"
                 >
                   <div className="flex flex-col justify-center text-[#C3C4C5]">
+                    <div className="flex flex-row justify-between">
+                      <h2 className="text-[24px] mb-2">{projects.title}</h2>
+                      <h3 className="text-[14px] mt-2 text-[#55555B] font-normal">{projects.date}</h3>
+                    </div>
                     <div className="mb-3">
                       <img src={projects.image} className="rounded-lg"/>
                     </div>
-                    <h2 className="text-[24px] mb-2">{projects.title}</h2>
-                    <h3 className="text-[14px] pl-1 text-[#55555B] font-normal">{projects.date}</h3>
                   </div>
                 </div>
               ))}
             </div>
-            <Link to="/projects" className="hover:text-[#854CE6] transition-colors duration-200">See More</Link>
+            <Link 
+            to="/projects" 
+            className="w-35 h-15 text-[24px] bg-[#191923] shadow-lg shadow-black outline-1 outline-white hover:text-[#854CE6] transition duration-200 flex justify-center items-center rounded-md hover:-translate-y-1 hover:transition-all hover:duration-300"
+            >
+            See More
+            </Link>
           </div>
         </div>
     </div>
