@@ -88,7 +88,7 @@ export const projects = [
         id: 5,
         title: "Game Rental",
         date: "Apr 2024 - June 2024",
-        image: "/assets/images/projects/ConsciousCart.png",
+        image: "/assets/images/projects/GameRental.png",
         tags: [
             "JavaScript", 
             "React", 
