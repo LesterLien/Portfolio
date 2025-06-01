@@ -108,7 +108,6 @@ export const projects = [
         tags: [
             "C++",
             "Google Test",
-            "YAML",
             "UML Diagram",
         ],
         github: "https://github.com/LesterLien/Monster-RPG-Game" 
