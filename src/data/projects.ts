@@ -1,6 +1,6 @@
 export const projects = [
     {
-        id: 0,
+        id: 1,
         title: "PixelHive",
         date: "Feb 2025 - Present",
         image: "/assets/images/projects/PixelHive.png",
@@ -19,7 +19,7 @@ export const projects = [
         github: "https://github.com/LesterLien/PixelHive"
     }, 
     {
-        id: 1,
+        id: 2,
         title: "AniLytics",
         date: "April 2025 - Present",
         image: "/assets/images/projects/AniLytics.png",
@@ -35,7 +35,7 @@ export const projects = [
         github: "https://github.com/LesterLien/AniLytics"
     },
     {
-        id: 2,
+        id: 3,
         title: "Boba Thoughts",
         date: "Jan 2024 - Mar 2024",
         image: "/assets/images/projects/BobaThoughts.png",
@@ -54,7 +54,7 @@ export const projects = [
         github: "https://github.com/stormyy00/BobaThoughts"
     },
     {
-        id: 3,
+        id: 4,
         title: "Resume 322",
         date: "Sept 2023 - Mar 2024",
         image: "/assets/images/projects/Resume322.png",
@@ -70,7 +70,7 @@ export const projects = [
         github: "https://github.com/UCR-Senior-Design/course-project-dvl"
     },
     {
-        id: 4,
+        id: 5,
         title: "Conscious Cart",
         date: "Apr 2024",
         image: "/assets/images/projects/ConsciousCart.png",
@@ -85,7 +85,7 @@ export const projects = [
         github: "https://github.com/TheFiveHeads/Google-AI-Hackathon-Project"
     },
     {
-        id: 5,
+        id: 6,
         title: "Game Rental",
         date: "Apr 2024 - June 2024",
         image: "/assets/images/projects/GameRental.png",
@@ -101,7 +101,7 @@ export const projects = [
         github2: "https://github.com/stormyy00/cs166-frontend"
     },
     {
-        id: 6,
+        id: 7,
         title: "Monster RPG Game",
         date: "Sept 2022 - Dec 2023",
         image: "/assets/images/projects/MonsterRPGGame.png",
