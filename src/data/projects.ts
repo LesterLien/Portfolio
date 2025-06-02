@@ -97,8 +97,7 @@ export const projects = [
             "TailwindCSS", 
             "Java"
         ],
-        github: "https://github.com/stormyy00/cs166", 
-        github2: "https://github.com/stormyy00/cs166-frontend"
+        github: "https://github.com/stormyy00/cs166"
     },
     {
         id: 7,
