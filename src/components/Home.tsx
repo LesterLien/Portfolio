@@ -161,6 +161,9 @@ function Home() {
                 </span>
               ))}
             </div>
+            <div className="mb-4">
+                <p className="text-[14px] text-normal font-normal leading-relaxed">{selectedProject.description}</p>
+            </div>
             <div className="w-full bg-[#2a2a2e] rounded-md p-1">
               <a
               href={selectedProject.github}

@@ -10,6 +10,7 @@ export default function Projects() {
     image: string;
     tags: string[];
     github: string;
+    description: string;
   } | null>(null);
 
   const [showModal, setShowModal] = useState(false);
@@ -21,6 +22,7 @@ export default function Projects() {
     image: string;
     tags: string[];
     github: string;
+    description: string;
   }) => {
     setSelectedProject(project);
     setShowModal(true);
@@ -78,6 +80,9 @@ export default function Projects() {
                   {tag}
                 </span>
               ))}
+            </div>
+             <div className="mb-4">
+                <p className="text-[14px] text-normal font-normal leading-relaxed">{selectedProject.description}</p>
             </div>
             <div className="w-full bg-[#2a2a2e] rounded-md p-1">
               <a
