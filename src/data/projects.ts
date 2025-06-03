@@ -16,7 +16,8 @@ export const projects = [
             "Steam API", 
             "IsThereAnyDeal API"
         ],
-        github: "https://github.com/LesterLien/PixelHive"
+        github: "https://github.com/LesterLien/PixelHive",
+        description: "PixelHive is a solo personal project that provides a web application for PC gamers to explore trending games, track favorites, and discover the best deals across multiple online stores. It pulls real-time data from external APIs to showcase popular, collected, and waitlisted games, along with regular and discounted prices. The app includes user authentication, allowing registered users to log in, browse detailed game information, and favorite titles. PixelHive provides a simplified interface for gamers looking to stay updated on pricing and discounts."
     }, 
     {
         id: 2,
@@ -32,7 +33,8 @@ export const projects = [
             "PostgreSQL"
 
         ],
-        github: "https://github.com/LesterLien/AniLytics"
+        github: "https://github.com/LesterLien/AniLytics",
+        description: "AniLytics is a solo personal project that features an interactive data visualization dashboard developed to explore information from MyAnimeList anime datasets. It allows users to see trends in topics like as user demographics, top anime, genre distribution, rating correlations, user engagement, production and licensing, and cultural influences. The project organizes and arranges huge datasets to provide real-time visualizations. AniLytics is a simple way to examine how anime content and user behavior relate across multiple categories."
     },
     {
         id: 3,
@@ -51,7 +53,8 @@ export const projects = [
             "Yelp API", 
             "Google API"
         ],
-        github: "https://github.com/stormyy00/BobaThoughts"
+        github: "https://github.com/stormyy00/BobaThoughts",
+        description: "Boba Thoughts is a collaborative school project that focuses on helping users discover local boba shops through an interactive web application. The app uses data from Yelp and Google Maps APIs to display nearby stores, allowing users to search by location or name, filter results, and favorite shops. As the frontend developer, I was in charge of developing the login and signup page and favorites tab, integrating Figma designs into responsive components, and collaborating with a five-person team to ensure project goals were met. I also helped plan the site architecture by developing UML and design documents."
     },
     {
         id: 4,
@@ -66,8 +69,10 @@ export const projects = [
             "MongoDB", 
             "TailwindCSS", 
             "CSS",
+            "Figma"
         ],
-        github: "https://github.com/UCR-Senior-Design/course-project-dvl"
+        github: "https://github.com/UCR-Senior-Design/course-project-dvl",
+        description: "Resume 322 is a school project that offers an alternative resume-building experience through a web application designed for students. It allows users to write resumes using Markdown and customize them with CSS, while viewing a live preview in real time. The goal is to give students more flexibility and control over formatting compared to traditional word processors. As the frontend developer, I created interfaces for the login and signup pages, as well as PDF exporting. The app is designed to help users explore, understand Markdown basics, and eventually export their customized resumes into professional PDFs."
     },
     {
         id: 5,
@@ -82,7 +87,7 @@ export const projects = [
             "FDC API", 
             "Hackathon"
         ],
-        github: "https://github.com/TheFiveHeads/Google-AI-Hackathon-Project"
+        github: "https://github.com/TheFiveHeads/Google-AI-Hackathon-Project",
     },
     {
         id: 6,
