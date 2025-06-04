@@ -14,6 +14,7 @@ function Home() {
       image: string;
       tags: string[];
       github: string;
+      description: string;
     } | null>(null);
   
     const [showModal, setShowModal] = useState(false);
@@ -25,6 +26,7 @@ function Home() {
       image: string;
       tags: string[];
       github: string;
+      description: string;
     }) => {
       setSelectedProject(project);
       setShowModal(true);
@@ -139,6 +141,9 @@ function Home() {
         {showModal && selectedProject && (
         <div className="fixed inset-0 bg-black/40 flex justify-center items-center z-50">
           <div className="bg-[#181823] p-6 rounded-xl w-11/12 max-w-xl text-white relative">
+            <div className="mb-3 overflow-hidden h-[171px]">
+              <img src={selectedProject.image} className="rounded-lg" />
+            </div>
             <button
               onClick={closeModal}
               className="absolute top-3 right-3 text-2xl font-bold hover:text-[#854CE6] cursor-hover"
@@ -147,21 +152,18 @@ function Home() {
             </button>
             <h2 className="text-[24px] font-semibold mb-1">{selectedProject.title}</h2>
             <p className="text-[14px] text-gray-400 mb-2">{selectedProject.date}</p>
-            <div className="mb-3 overflow-hidden h-[171px]">
-                <img src={selectedProject.image} className="rounded-lg" />
-            </div>
 
             <div className="flex flex-wrap gap-2 mb-4">
               {selectedProject.tags.map((tag, i) => (
                 <span
                   key={i}
-                  className="bg-[#2a2a2e] text-xs px-3 py-1 rounded-full"
+                  className="bg-[#3c1a79] text-xs px-3 py-1 rounded-md text-[#854CE6] font-normal"
                 >
                   {tag}
                 </span>
               ))}
             </div>
-            <div className="mb-4">
+             <div className="mb-4">
                 <p className="text-[14px] text-normal font-normal leading-relaxed">{selectedProject.description}</p>
             </div>
             <div className="w-full bg-[#2a2a2e] rounded-md p-1">
