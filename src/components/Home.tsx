@@ -14,7 +14,7 @@ function Home() {
       image: string;
       tags: string[];
       github: string;
-      description: string;
+      description?: string;
     } | null>(null);
   
     const [showModal, setShowModal] = useState(false);
@@ -26,7 +26,7 @@ function Home() {
       image: string;
       tags: string[];
       github: string;
-      description: string;
+      description?: string;
     }) => {
       setSelectedProject(project);
       setShowModal(true);

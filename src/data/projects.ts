@@ -88,6 +88,7 @@ export const projects = [
             "Hackathon"
         ],
         github: "https://github.com/TheFiveHeads/Google-AI-Hackathon-Project",
+        description: "Conscious Cart is a mobile app developed during a hackathon to help users make smarter nutritional choices by providing detailed food analysis. It connects to the USDA's FoodData Central (FDC) and uses machine learning through the Gemini API to deliver information on ingredients, allergens, and dietary compatibility, including vegan, gluten-free, and diabetic-friendly options. As a frontend developer, I developed the Android interface that allows users to search for food items, save favorite products, and visit the home, signup, and login pages. I also used Firebase authentication to provide secure login, signup, and individual data storage. Conscious Cart is intended to help individuals who value their health make informed food decisions with easily."
     },
     {
         id: 6,
@@ -102,7 +103,8 @@ export const projects = [
             "TailwindCSS", 
             "Java"
         ],
-        github: "https://github.com/stormyy00/cs166"
+        github: "https://github.com/stormyy00/cs166",
+        description: ""
     },
     {
         id: 7,
@@ -114,7 +116,8 @@ export const projects = [
             "Google Test",
             "UML Diagram",
         ],
-        github: "https://github.com/LesterLien/Monster-RPG-Game" 
+        github: "https://github.com/LesterLien/Monster-RPG-Game", 
+        description: ""
     },
 
 ];
