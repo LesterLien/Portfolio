@@ -10,7 +10,7 @@ export default function Projects() {
     image: string;
     tags: string[];
     github: string;
-    description: string;
+    description?: string;
   } | null>(null);
 
   const [showModal, setShowModal] = useState(false);
@@ -22,7 +22,7 @@ export default function Projects() {
     image: string;
     tags: string[];
     github: string;
-    description: string;
+    description?: string;
   }) => {
     setSelectedProject(project);
     setShowModal(true);
