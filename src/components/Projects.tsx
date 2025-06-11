@@ -58,7 +58,7 @@ export default function Projects() {
 
       {showModal && selectedProject && (
         <div className="fixed inset-0 bg-black/40 flex justify-center items-center z-50">
-          <div className="bg-[#181823] p-6 rounded-xl w-11/12 max-w-xl text-white relative">
+          <div className="bg-[#181823] p-6 rounded-xl max-w-xl text-white relative">
             <div className="mb-3 overflow-hidden h-[171px]">
               <img src={selectedProject.image} className="rounded-lg" />
             </div>
